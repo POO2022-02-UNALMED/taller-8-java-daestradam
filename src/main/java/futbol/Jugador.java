@@ -19,12 +19,12 @@ public class Jugador extends Futbolista {
 	}
 
 	@Override
-	public int compareTo(Futbolista f) {
+	public int compareTo(Futbolista o) {
 		// TODO Auto-generated method stub
-		if(this.getEdad()>=f.getEdad()) {
-			return this.getEdad()-f.getEdad();
+		if(this.getEdad()>=o.getEdad()) {
+			return this.getEdad()-o.getEdad();
 		} else {
-			return f.getEdad()-this.getEdad();
+			return o.getEdad()-this.getEdad();
 		}
 	}
 
