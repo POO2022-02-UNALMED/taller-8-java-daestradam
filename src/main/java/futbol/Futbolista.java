@@ -22,11 +22,6 @@ public abstract class Futbolista implements Comparable<Object> {
 		return "El futbolista " + nombre + " tiene " + edad + ", y juega de " + posicion;
 	}
 	
-	@Override
-	public int compareTo(Futbolista o) {
-		return 0;		
-	}
-	
 	public boolean equals (Futbolista f) {
 		if(this.compareTo(f)==0) {
 			return true;
