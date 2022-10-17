@@ -18,7 +18,6 @@ public class Jugador extends Futbolista {
 		dorsal=7;
 	}
 
-	@Override
 	public int compareTo(Futbolista o) {
 		// TODO Auto-generated method stub
 		if(this.getEdad()>=o.getEdad()) {
@@ -37,6 +36,12 @@ public class Jugador extends Futbolista {
 	@Override
 	public String toString() {
 		return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
